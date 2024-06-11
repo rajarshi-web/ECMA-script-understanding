@@ -1,0 +1,62 @@
+<script>
+    // in es5
+    var sum = function () {
+        var a = 100;
+        var b = 120;
+        return a+b;
+    };
+    console.log(sum());
+
+</script>
+
+<script>
+    // in es6
+    const sub = () => {
+        let c = 100;
+        let d = 120;
+        return c-d;
+    }
+    console.log(sub());
+</script>
+
+<script>
+    // another way es6
+    let e = 120;
+    let f = 10;
+
+    const div = () => {
+        return e/f;
+    }
+    console.log(div());
+</script>
+
+<script>
+    // another way es6
+    let x = 12;
+    let y = 10;
+
+    const mul = () => 
+        x*y;
+    
+    console.log(mul());
+</script>
+
+<script>
+    let z = "Arrow";
+    let h = 12;
+
+    const func = () => {
+        return z+h;
+    }
+
+    console.log(`${z} ${h}`);
+    console.log(func());
+</script>
+
+<script>
+    let u = 10;
+    const funtion = (v) => u+v;
+    console.log(funtion(100));
+
+    
+</script>

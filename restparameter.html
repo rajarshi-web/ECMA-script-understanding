@@ -1,0 +1,57 @@
+<script>
+    // es5
+    function add (a,b){
+        console.log(a+b);
+    }
+    add(1,2,3,4);  //only taking first two arguments as add has  2 funtion parameter
+</script>
+
+
+<script>
+    // es5
+    function add (u,v,x,y){
+        console.log(u+v+x+y);
+    }
+    add(1,2,3,4);  //bad method
+</script>
+
+
+<!-- indifinte arguments in an array -->
+
+<script>
+    function summ(...inputs) {
+        console.log(inputs)
+        console.log(inputs[2]);
+    }
+    summ(1,2,8)
+</script>
+
+<script>
+    function sum(...arrayInputs){
+        console.log(arrayInputs);  //rest parameter
+        console.log(...arrayInputs) //need value
+        let total = 0;
+        for( i of arrayInputs){
+            total = total + i;
+            // return(total);
+            
+        }
+        console.log(total);
+    }
+    sum(1,2,3,4,5);
+    // console.log(sum.length); // It will log 0 because the sum function uses the rest parameter (which doesn't count towards the length)
+</script>
+
+<script>
+    function sum(...arrayInputs){
+        console.log(arrayInputs);  //rest parameter
+        console.log(...arrayInputs) //need value
+        let total = 0;
+        for( i of arrayInputs){
+            total = total + i;
+        }
+        return(total);
+    }
+   let reult = sum(1,2,3,4,5,6);
+   console.log(reult)
+</script>

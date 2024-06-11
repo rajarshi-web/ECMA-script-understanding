@@ -1,0 +1,22 @@
+<p>is finite method isFinite()<br> The global isFinte method returns false if  argument is infinte on NaN</p>
+<p>is NaN method isNaN()<br>The global isNaN method returns true if the argument is NaN otherwise false</p>
+<p>is integer method isInteger()<br>The global isInteger method returns true if the argument is an Integer </p>
+
+
+<p>global method can be use as number but number method is work only in Number method</p>
+
+<script>
+    let name = "arun";
+    let age = 24;
+    let number = 0;
+
+    const result = () =>{
+        return age / number;
+    }
+    console.log(isFinite(result));
+    console.log(result());
+    console.log(isNaN(name));
+    console.log(Number.isFinite(age));
+    console.log(Number.isInteger(result));
+   
+</script>                                                                                     

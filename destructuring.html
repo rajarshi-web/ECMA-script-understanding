@@ -1,0 +1,34 @@
+<script>
+    const array = ['Sumo' , 'omnie' , 'bolero' , 'jeep'];
+// in es5
+    var car1 = array[0];
+    var car2 = array[1];
+    var car3 = array[2];
+    var car4 = array[3];
+
+    console.log("my garage cars are" + car1 + "" + car2 + "" + car3 + "" + car4);
+
+    let [car1,car2,car3,car4] = array;
+
+    console.log("my fav car is" + car2);
+    
+</script>
+
+
+<script>
+    const arrayCar = ['Sumo' , 'omnie' , 'bolero' , 'jeep'];
+// in es6
+   
+
+    let [car1,car2,car3,car4] = arrayCar;
+
+    console.log("my fav car is" + car2);
+
+    console.log(arrayCar.length);
+    // let [car1,,car3] = arrayCar;
+    // console.log(`${car1}`);
+
+    console.log(`${car3}`);
+
+</script>
+

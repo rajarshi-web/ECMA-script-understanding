@@ -1,0 +1,43 @@
+<script>
+    const cars = {
+        Company: 'Tata',
+        Name: "Altroz",
+        Year: 2023
+    }
+    console.log(cars.Name);
+
+
+    // if we use object distructuring
+
+
+    let {Company,Name,Year} = cars;
+
+
+    console.log(`Manufatured on ${Year}, car name is ${Company} ${Name}`);
+
+</script>
+
+
+<script>
+    const Cars = {
+        company: 'Hyundai',
+        name: "i20",
+        year: 2024,
+        number: {
+            EngineNumber: "1k1.2klbt",
+            ChasisNumber: "1245122024"
+        }
+    }
+    console.log(Cars.name);
+
+
+    // if we use object distructuring
+
+// if we want instead of name carsName  
+   
+    let {company,name:carsName,year,numberh} = Cars
+
+    
+
+    console.log(`Manufatured on ${year}, car name is ${company} ${carsName}, Chasis Number is ${number.ChasisNumber}`);
+</script>
